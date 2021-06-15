@@ -1,175 +1,270 @@
-<!DOCTYPE html>
-<html>
-<head>
+<DOCTYPE html>  
+    <html lang="es">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-.body{
-    background-image: url('https://149528304.v2.pressablecdn.com/wp-content/uploads/2020/03/vishal-banik-2A95bKGQmXY-unsplash-980x1470.jpg');
-height:3000px ;
-position:absolute;
-
+.icono{
+  width: 100px;
+  height: 60px;
+  display: inline;
 }
-.canvas{
-    width: 600px;
-    height: 2500px;
-    border:1px solid black;
-    background-color:black;
-    padding: 100px;
+      i{
+        
+        
+
+      }
+      
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;}
+    .container{
+    background-color: black;
+    float:left;
+    width: 85% ;
     position: relative;
-    margin-left: 250px;
-    margin-top: 150px;
-    opacity:0.5 ;
-
-}
-h2{
-    font-family: serif;
-    font-size: 350%;
-    font-weight: 1;
-    position: relative;
-    margin-top: -2700px;
-    margin-left: 290px;
-    color: white;
-}
-.barral{
-    text-align: center;
-   margin-right: 130px;
-}
-.barra{
-    display: inline;
-    margin-inline-start:300px;
-text-align: center;
-font-size: 120%;
-margin-right: 100px;
-margin-left: 200px;
-color: white;
-}
-.im{
-    position: absolute;
-    margin-left: 600px;
-    margin-top: -100px;
-    width: 400px;
-}
-
-.imga{
-    position: absolute;
-    margin-top: 350px;
-    margin-left: 19%;
-    padding: 1px;
-width: 400px;
-}
-.boton img{
-    position: absolute;
-    width:350px ;
-    margin-left:680px;
-    margin-top: 550px;
-}
-.btn {
-    position: absolute;
-  top: 1300px;
-  left: 860px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color:black;
-  color:white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 2px solid white;
-  text-align: center;
-}
+    top: 50px;
+    
 
 
-
-.sombrero{
-    position: absolute;
-    width: 400px;
-    margin-top: 1206px;
-    margin-left: 652px;
-    opacity:0.8;
-}
-h3{
-    position: absolute;
-    width: 400px;
-    margin-top: 1006px;
-    margin-left: 302px;
-    color: white;
-    font-size: 1000%;
-    font-weight: 2;
-}
-.look{
-    position: absolute;
-    width: 450px;
-    margin-top: 1656px;
-    margin-left: 252px;
-    opacity:0.8;
-}
-.menuu {
+  }
+  
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 250px;
-  background-color: transparent;
-  border: 3px solid white;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
   float:right;
   position: relative;
-  top: 1850px;
-right: 25%;
-opacity: 0.7;
+  top: 50px;
+
 }
 
-.menu {
+li a {
   display: block;
-  color:white;
+  color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-.menu {
+li {
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #555;
 }
 
-.menu:last-child {
+li:last-child {
   border-bottom: none;
 }
 
-.menu a.active {
-  background-color:white;
-  color:black;
+li a.active {
+  background-color: black;
+  color: white;
 }
 
-menu a:hover:not(.active) {
-  background-color:white;
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.barra {
+  position:relative ;
+  top: 15px;
+
+  overflow: hidden;
+  background-color:black;
+}
+
+/* Style the topnav links */
+.barra a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.barra a:hover {
+  background-color: #ddd;
   color: black;
 }
+.encabezado {
+width: 1350px;
+top: -50px;
 
+}
+.formulario{
+  width: 500px;
+  max-width: 100%;
+margin: auto;
+margin-top: 600px;
+padding: 20px;
+box-shadow: 0 0 20px 1px black;
+position: relative;
+}
+.formulario__titulo{
+  text-align: center;
+  margin-top: 0%;
+  color: black;
+}
+.formulario__input, .formulario__titulo,.formulario__submit{
+  display: block;
+  width: 100%;
+  font-size: 2em;
+  }
+  .formulario__input{
+    padding: 20px;
+    background: transparent;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  }
+  .formulario__label{
+    padding-left: 20px;
+    position: absolute;
+    margin-top: 40px;
+    z-index: -20;
+  }
 
-
+  
     </style>
-    </head>
-<BODY class="body"> 
-   <div> <ul class="barral">
-        <li class="barra" ><a href="Home.html"></a>Home</li>
-        <li class="barra" > <a href="Suscribite.html"></a>Suscribite</li>
-        <li class="barra" > <a href="Contactanos.html"></a> Contactanos</li>
-    </ul></div>
-<canvas class="canvas" id="my canvas" > </canvas>
-<h2 >Lemonde <br> Oficial </br></h2>
+    
 
-</p>
-<img class="im" src="https://i.pinimg.com/564x/c9/00/9b/c9009b689b72a0223c0a0858c5c3f72c.jpg">
-<img class="imga"src="https://i.pinimg.com/564x/e2/53/d6/e253d60f10aa677e3e093ae56d5f953a.jpg" >
-<div class="boton">
-<img background-image: url ('final/sale salee.jpg')>
-<button class="btn" >Clic aquí</button></div>
-<img class="sombrero" src="https://i.pinimg.com/564x/1b/f0/48/1bf0483ea3a0486edd7c4d01b72a562d.jpg">
-<h3>AW <BR>2021</BR></h3>
-<img class="look"  src="https://i.pinimg.com/564x/cd/1e/cf/cd1ecf3cd7a27082b71ef1d7f247ad20.jpg">
-<div> <ul class="menuu">
-    <li><a class="menu" href="Lemonde.html">Home</a></li>
-    <li><a class="menu" href="News.html">News</a></li>
-    <li><a class="menu"href="abrigos.html">Abrigos</a></li>
-    <li><a class="menu"href="Calzados.html">Calzados</a></li>
-  </ul> </div>
-</BODY>
+<link rel="stylesheet" type="text/css" href="/css/estilos.css"/>
+<meta charset="utf-8"></meta>
+<meta name="viewport"  content="widht=device-widht, initial-scale=1.0">
+<scrip type="text/JavaScript"></scrip>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>   
 
 
+
+ </head>
+ <body>
+  <div id="icon">
+    <a href="" class="icono"></a>
+    <i  class='bx bxl-facebook-square'></i>
+    <a href="" class="icono"></a>
+    <i  class='bx bxl-instagram' ></i>
+  </div>
+  <img class="encabezado" src="img\otro.jpg" >
+   <div class="barra">
+    <a href="#">Suscribete</a>
+    <a href="formulario.html">Contactanos</a>
+    <a href="#">OUTSIDE</a>
+  </div>
+    
+  
+  <ul>
+        <li><a class="active" href="Lemonde.html">Home</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="abrigos.html">Abrigos</a></li>
+        <li><a href="Calzados.html">Calzados</a></li>
+      </ul>
+      <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicador -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+          <!-- envoltura -->
+          <div class="carousel-inner" role="listbox">
+      
+            <div class="item active">
+              <img src="https://i1.wp.com/www.viviendoencasa.mx/wp-content/uploads/2020/08/Como-combinar-tenis-blancos-outfit-mujer-2020.jpg?resize=1024%2C576&ssl=1" alt="Chania" width="460" height="345">
+              <div class="carousel-caption">
+                <h3>Style</h3>
+                <p>Total looks para tu dia y noche</p>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="https://www.instyle.es/medio/2021/01/29/outfits-comodos_488dbb4f_1280x720.jpg" alt="Chania" width="460" height="345">
+              <div class="carousel-caption">
+                <h3>LEMONDE</h3>
+                <p>Marca tu estilo, sé única!</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="https://www.eluniversal.com.mx/sites/default/files/2018/03/16/outfitsparaprimaveraportada.jpg" alt="Flower" width="460" height="345">
+              <div class="carousel-caption">
+                <h3>LOVE</h3>
+                <p>Tenes actitud, tenes lemonde.Lo tenes todo!</p>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="https://www.okchicas.com/wp-content/uploads/2017/09/looks-cualquier-clima.jpg" alt="Flower" width="460" height="345">
+              <div class="carousel-caption">
+                <h3>Primavera</h3>
+                <p>Que las flores traigan color a tu vida</p>
+              </div>
+            </div>
+        
+          </div>
+      
+          <!-- derecha e izquierda -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div >
+      <form class="formulario"> 
+        <h1 class="formulario__titulo">CONTACTANOS</h1>
+           <label for="name"class="formulario__label">Nombre:</label>
+           <input type="text" class="formulario__input" id="name" name="user_name" />
+           <label for="mail"class="formulario__label">Correo electrónico:</label>
+           <input type="email" class="formulario__input" id="mail" name="user_email" />
+           <label for="msg"class="formulario__label">Mensaje:</label>
+           <textarea id="msg" class="formulario__input" name="user_message"></textarea>
+         <input type="submit" onclick='return enviarFormulario();' class="formulario__submit" value='Enviar'>
+         </form>
+          </div>
+          <div id ='error'></div>
+       
+      <script> language="javascript";
+        save=prompt("Suscribete con tu mail");
+      if (confirm("Lemonde te da la Bienvenida! :D")); 
+      var nombre= document.getElementById('nombre');
+      var mail=document.getElementById('mail');
+      var error=document.getElementById('error');
+  
+
+      function.enviarFormulario(){
+        console.log('mensaje enviado...');
+        var mensajeError=[];
+        if (nombre.value ===null|| nombre.value===''){
+          mensajeError.push ('ingresa tu nombre');
+}
+if (mail.value===null|| mail.value===''){
+  mensajeError.push('ingresa el mail');
+}        
+        return false;
+      }
+
+      
+      
+      </script>
+      
+
+       
+    
+
+   
+ </body>
+ </html>
