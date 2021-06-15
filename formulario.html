@@ -4,22 +4,23 @@
     <style>
         .body{
             background-color: black;
-            background-image: url("https://mail.google.com/mail/u/0/#search/canva/QgrcJHsThjKTPRHcplWRvhDhWKsqNShhrmL?projector=1&messagePartId=0.1");
         
             
         }
         
-        .formu{
+        form{
             
-            background-color: white;
-            width: 500px;
-            height: 1000px;
-            text-align: left;
-            float: center;
-            padding: 50px 50px;
+            background-color:black;
+            border-radius: 100px;
+            padding: 10px;
             position: relative ;
-            margin-left: 25%;
+            margin: auto;
+            align-content: center;
+            text-decoration-color: blanchedalmond;
         
+        }
+        label{
+            background-color:yellow;
         }
         .titulo{
             color:white;
@@ -32,15 +33,18 @@
 <h1 class="titulo">Completa el formulario</h1>
 
 
-<form class="formu">
-  <label class="1" for="nombre">Nombre:</label><br>
-  <input type="text"size="50" id="nombre" name="Nombre"><br>
-  <label class="2" for="apellido">Apellido:</label><br>
-  <input type="text"size="50" id="apellido" name="apellido">
 
+<form action="marianelaflorgarcia@gmail.com" method="get">
+   <label for="nombre">Nombre</label> 
+   <input type="text" size="30" maxlength="30" required/> <br/>
+   <label for="email">Email</label>
+    <input type="email"size="20" maxlength="20"required/> <br/>
+    <label for="edad">Edad</label>
+    <input type="number" maxlength="18" minlength="100"  required/> <br/>
+    <label for="mensaje">Mensaje</label>
+   <textarea name="mensaje"maxlength="200"required></textarea><br/>
+    <input type="submit" value="Enviar">
+    <input type="reset"  value="Borrar">
 </form>
-
-
-
 </body>
 </html>

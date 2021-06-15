@@ -6,6 +6,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+.icono{
+  width: 100px;
+  height: 60px;
+  display: inline;
+}
+      i{
+        
+        
+
+      }
+      
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
     width: 70%;
@@ -15,11 +26,12 @@
     float:left;
     width: 85% ;
     position: relative;
-    top: -200px;
+    top: 50px;
     
 
 
   }
+  
 ul {
   list-style-type: none;
   margin: 0;
@@ -29,7 +41,7 @@ ul {
   border: 1px solid #555;
   float:right;
   position: relative;
-  top: -200px;
+  top: 50px;
 
 }
 
@@ -60,7 +72,7 @@ li a:hover:not(.active) {
 }
 .barra {
   position:relative ;
-  top: -350px;
+  top: 15px;
 
   overflow: hidden;
   background-color:black;
@@ -82,21 +94,68 @@ li a:hover:not(.active) {
   color: black;
 }
 .encabezado {
-position: relative;
-top: -55px;
+width: 1350px;
+top: -50px;
+
+}
+.formulario{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 80px;
+  
+}
+.formulariof{
+  margin: 0 auto;
+  width: 300px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+.fli{
+  margin-top: 1em;
+}
+label{
+  display: inline-block;
+  text-align: right;
+}
+input,textarea{
+  font: 1em sans-serif;
+  width: 190px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+
+}
+input:focus,
+textarea:focus {
+  border-color: #000;
+  
 }
 
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
     </style>
     
 
 <link rel="stylesheet" type="text/css" href="/css/estilos.css"/>
-<meta charset="utf-8"></meta>   
+<meta charset="utf-8"></meta>
+<meta name="viewport"  content="widht=device-widht, initial-scale=1.0">
+<scrip type="text/JavaScript"></scrip>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>   
 
 
 
  </head>
  <body>
-    <img class="encabezado" src="C:\Users\Usuario\Downloads\20210414_164923_0000.png" height="100%" width="100%" padding= 20px >
+  <div id="icon">
+    <a href="" class="icono"></a>
+    <i  class='bx bxl-facebook-square'></i>
+    <a href="" class="icono"></a>
+    <i  class='bx bxl-instagram' ></i>
+  </div>
+  <img class="encabezado" src="img\otro.jpg" >
    <div class="barra">
     <a href="#">Suscribete</a>
     <a href="formulario.html">Contactanos</a>
@@ -169,6 +228,25 @@ top: -55px;
           </a>
         </div>
       </div>
+      <div >
+      <form action="/my-handling-form-page" method="post" class="formulariof"> 
+        <ul class="formulario">
+         <li class="fli">
+           <label for="name">Nombre:</label>
+           <input type="text" id="name" name="user_name" />
+         </li>
+         <li class="fli">
+           <label for="mail">Correo electrónico:</label>
+           <input type="email" id="mail" name="user_email" />
+         </li>
+         <li class="fli">
+           <label for="msg">Mensaje:</label>
+           <textarea id="msg" name="user_message"></textarea>
+         </li></div>
+       
+      <script> language="javascript";
+        save=prompt("Suscribete con tu mail");
+      if (confirm("Lemonde te da la Bienvenida! :D")); </script>
       
 
        
